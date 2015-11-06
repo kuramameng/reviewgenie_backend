@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151106200032) do
+ActiveRecord::Schema.define(version: 20151106201656) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,22 +27,15 @@ ActiveRecord::Schema.define(version: 20151106200032) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "review_contents", force: :cascade do |t|
-    t.string   "reviewerName"
-    t.text     "content"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
   create_table "reviews", force: :cascade do |t|
+    t.string   "reviewer"
+    t.text     "content"
     t.integer  "product_id"
-    t.integer  "review_content_id"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_index "reviews", ["product_id"], name: "index_reviews_on_product_id", using: :btree
-  add_index "reviews", ["review_content_id"], name: "index_reviews_on_review_content_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",       null: false
@@ -70,7 +63,6 @@ ActiveRecord::Schema.define(version: 20151106200032) do
   add_index "wishlists", ["user_id"], name: "index_wishlists_on_user_id", using: :btree
 
   add_foreign_key "reviews", "products"
-  add_foreign_key "reviews", "review_contents"
   add_foreign_key "wishlists", "products"
   add_foreign_key "wishlists", "users"
 end
