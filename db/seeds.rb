@@ -11,6 +11,8 @@ Review.delete_all
 User.delete_all
 Product.delete_all
 
+######## !!!! need to rake db:drop everytime for it to work !!!! ########
+
 ###### generate meng@js.com meng123 test account ######
 email = "meng@js.com"
 if User.exists? email: email
@@ -41,7 +43,7 @@ Connects to your iPhone, iPad, or iPod with Lightning Connector and charges/sync
 Compact Lightning Connector head works with nearly all cases
 Backed by an AmazonBasics 1-year Limited Warranty", price: 5.99)
 
-####### generate test wishlist, need to rake db:drop everytime for it to work #######
+####### generate test wishlist #######
 Wishlist.create!(user_id: 1, product_id: 1, title: "Meng's wishlist", comment: "I want that!")
 Wishlist.create!(user_id: 1, product_id: 2, title: "Meng's wishlist", comment: "Pretty nice!")
 Wishlist.create!(user_id: 1, product_id: 3, title: "Meng's wishlist", comment: "Saved!")
@@ -68,6 +70,9 @@ DURABILITY & BUILD QUALITY
 MPOW has always impressed me in their build quality (especially at their prices), but the build quality of an item like this must be absolutely exceptional, in order to stand up to the elements and likely impact that occurs in outdoor life. I can honestly say this product really feels like it'll hold up to its word. It feels rock solid in my hands, and has a rubberized, sturdy texture all over the unit. I felt so secure with its build that, while playing music, i dropped it from shoulder height onto the (hard) kitchen floor. Not only did the speaker remain unharmed, my music kept playing via bluetooth, unnoticed! I have no doubt that this item will be fine even if it falls off my bike.
 
 I'd also like to add that the rubber 'feet' on the bottom (the bottom is directly underneath the controls - so that the speakers are on their sides) are extremely nice. I can set it on just about any flat surface and it sits tight - No sliding, I can even sit it on the dash of my car and it's fine to drive with.", product_id: 1)
+
+###### generate test user profile #######
+ Profile.create!(user_name: "kuramameng", first_name: "Jiangsha", last_name: "Meng", location: "Boston, MA", status: "Meng is my hero", user_id: 1)
 
 
 
