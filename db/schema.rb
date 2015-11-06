@@ -22,9 +22,9 @@ ActiveRecord::Schema.define(version: 20151106203658) do
     t.string   "img_url"
     t.string   "category"
     t.text     "description"
-    t.decimal  "price"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.decimal  "price",       precision: 8, scale: 2
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
   end
 
   create_table "profiles", force: :cascade do |t|
