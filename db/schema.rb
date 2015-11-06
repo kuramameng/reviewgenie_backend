@@ -16,20 +16,25 @@ ActiveRecord::Schema.define(version: 20150806195336) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "books", force: :cascade do |t|
+  create_table "products", force: :cascade do |t|
     t.string   "title"
-    t.string   "isbn"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "asin"
+    t.string   "img_url"
+    t.string   "category"
+    t.text     "description"
+    t.decimal  "price"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "email",           null: false
-    t.string   "token",           null: false
-    t.string   "password_digest", null: false
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.string   "email",       null: false
+    t.string   "token",       null: false
+    t.string   "password",    null: false
+    t.string   "user_name"
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
