@@ -1,4 +1,5 @@
 #
 class Product < ActiveRecord::Base
-  belongs_to :user
+  has_many :wishlists
+  has_many :users, through: :wishlists
 end
