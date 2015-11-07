@@ -5,6 +5,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :title
       t.string :asin
       t.string :img_url
+      t.string :rating
       t.string :category
       t.text :description
       t.decimal :price, :precision => 8, :scale => 2

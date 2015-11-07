@@ -22,22 +22,22 @@ else
 end
 
 ###### generate test product data ######
-Product.create!(title: "Mpow Armor Portable Wireless Bluetooth Speakers with Additional 1000 mAh Emergency Power Bank Function and Splashproof Shockproof Dustproof for Outdoor/Shower (Orange/Black)", asin: "B00QF1DHP8", img_url: "http://ecx.images-amazon.com/images/I/51C4QCgNifL._SL160_.jpg", category: "Electronics", description: "Armor wireless bluetooth 4.0 speaker provides strong bass and loud sound with built-in 5W driver & bass radiator and A2DP/AVRCP support. You can enjoy HD clear music even in the noisy outdoor square.
+Product.create!(title: "Mpow Armor Portable Wireless Bluetooth Speakers with Additional 1000 mAh Emergency Power Bank Function and Splashproof Shockproof Dustproof for Outdoor/Shower (Orange/Black)", asin: "B00QF1DHP8", img_url: "http://ecx.images-amazon.com/images/I/51C4QCgNifL._SL160_.jpg", rating: "4.4", category: "Electronics", description: "Armor wireless bluetooth 4.0 speaker provides strong bass and loud sound with built-in 5W driver & bass radiator and A2DP/AVRCP support. You can enjoy HD clear music even in the noisy outdoor square.
 Extra long built-in rechargeable 1000 mAH battery allows you playing music up to 10 hours, almost all day. More importantly, Additional emergency power supply with max up to another 1000 mAH, can charge your cell phones when in urgent need in outdoor.
 Advanced ingress protection Tech is specially designed for ourdoor and shower. Great Splashproof, Shockproof and Dustproof function ensure happy playing without worry any more.
 Portable and suitable features guarantee better user experience when playing music in outdoor hiking/biking.
 Nice button design make pairing and using easier. Also, when need connecting automaticaly, turn on your phone bluetooth function first, then turn on the Armor speaker.", price: 35.99
   )
 
-Product.create!(title: "Bluetooth Headphones, TOTU Bluetooth Wireless Headphones Noise Cancelling Headphones w/ Microphone [Gym/Running/Exercise/Sports/Sweatproof], Wireless Bluetooth Earbuds Headset Earphones for iPhone 6/6s,6 Plus/6s plus, 5 5c 5s 4s,iPad Air, Samsung Galaxy S6,S5,S4,S3 Note 4 3, HTC M9 M8 M7, LG Flex 2 G3 G2, and Other Bluetooth Android IOS Smart Cell phones/Devices", img_url: "http://ecx.images-amazon.com/images/I/41ew%2BjIcHNL._SL160_.jpg", category: "Electronics", description: "Advanced Technology: With bluetooth 4.0 and apt-X tech, the headphones ensure high-fidelity stereo music and clear speech within 10 meters. Invisible nano-coating technology protect earbuds against sweat during running and workouts.
+Product.create!(title: "Bluetooth Headphones, TOTU Bluetooth Wireless Headphones Noise Cancelling Headphones w/ Microphone [Gym/Running/Exercise/Sports/Sweatproof], Wireless Bluetooth Earbuds Headset Earphones for iPhone 6/6s,6 Plus/6s plus, 5 5c 5s 4s,iPad Air, Samsung Galaxy S6,S5,S4,S3 Note 4 3, HTC M9 M8 M7, LG Flex 2 G3 G2, and Other Bluetooth Android IOS Smart Cell phones/Devices", img_url: "http://ecx.images-amazon.com/images/I/41ew%2BjIcHNL._SL160_.jpg", rating: "4.3", category: "Electronics", description: "Advanced Technology: With bluetooth 4.0 and apt-X tech, the headphones ensure high-fidelity stereo music and clear speech within 10 meters. Invisible nano-coating technology protect earbuds against sweat during running and workouts.
 High Quality Guarantee: Noise cancellation makes you enjoy a clear sound in noisy occasion. Powerful rechargeable battery provide 5 hours of Talking/Playing time. Rubber adapters, unique flexible design and custom earbuds ensure you get it perfect fit and remain stable in your ear.
 Easy Access: The simple user interface on one of the earphones allows you adjust the volume, play/pause, select songs and answer/hang up calls completely effortlessly.
 Universal Compatibility: TOTU headphones can work seamlessly with your iPad, iPhone, iPod Touch, Android Smartphones, tablets, Bluetooth-enabled music players and any device with bluetooth connection.
 What You Get: Wireless headphone, user manual, charging cable and 5 different sizes earbuds. LIFETIME WARRANTY.", price: 19.99)
 
-Product.create!(title: "Apple Watch Band Solid Stainless Steel by Clixsy 42mm with 6 Removable Links and Adapters a Sturdy Two Clasp Buckle System also for the Sport Edition", img_url: "http://ecx.images-amazon.com/images/I/51oGaqNNcpL._SL160_.jpg", category: "Electronics", description: "none", price: 28.99)
+Product.create!(title: "Apple Watch Band Solid Stainless Steel by Clixsy 42mm with 6 Removable Links and Adapters a Sturdy Two Clasp Buckle System also for the Sport Edition", img_url: "http://ecx.images-amazon.com/images/I/51oGaqNNcpL._SL160_.jpg", rating:"4.1",category: "Electronics", description: "none", price: 28.99)
 
-Product.create!(title: "AmazonBasics Apple Certified Lightning to USB Cable - 3 Feet (0.9 Meters) - Black", img_url: "http://ecx.images-amazon.com/images/I/71Q6qO7ONlL._SL1500_.jpg", category: "Electronics", description: "Charging and syncing cable for your Apple devices
+Product.create!(title: "AmazonBasics Apple Certified Lightning to USB Cable - 3 Feet (0.9 Meters) - Black", img_url: "http://ecx.images-amazon.com/images/I/71Q6qO7ONlL._SL1500_.jpg", rating: "4.1", category: "Electronics", description: "Charging and syncing cable for your Apple devices
 Apple MFi certification ensures complete charge and sync compatibility with iPhone 6 Plus / 6 / 5s / 5c / 5 / iPad Air / iPad mini / mini 2 / iPad 4th generation and iPod nano 7th generation
 Connects to your iPhone, iPad, or iPod with Lightning Connector and charges/syncs by connecting the USB connector into your wall charger or computer
 Compact Lightning Connector head works with nearly all cases
@@ -72,7 +72,7 @@ MPOW has always impressed me in their build quality (especially at their prices)
 I'd also like to add that the rubber 'feet' on the bottom (the bottom is directly underneath the controls - so that the speakers are on their sides) are extremely nice. I can set it on just about any flat surface and it sits tight - No sliding, I can even sit it on the dash of my car and it's fine to drive with.", product_id: 1)
 
 ###### generate test user profile #######
- Profile.create!(user_name: "kuramameng", first_name: "Jiangsha", last_name: "Meng", location: "Boston, MA", status: "Meng is my hero", user_id: 1)
+ Profile.create!(user_name: "kuramameng", first_name: "Jiangsha", last_name: "Meng", gender: "M", location: "Boston, MA", status: "Meng is my hero", user_id: 1)
 
 
 
