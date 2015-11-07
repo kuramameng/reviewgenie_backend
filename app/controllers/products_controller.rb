@@ -1,55 +1,45 @@
-#
-class BooksController < OpenReadController
-  before_action :set_book, only: [:update, :destroy]
-
-  # GET /books
+class ProductsController < ApplicationController
   def index
-    @books = Book.all
-
-    render json: @books
+    render json: Product.all
   end
 
-  # GET /books/1
   def show
-    @book = Book.find(params[:id])
-
-    render json: @book
+    render json: Product.find(params[:id])
   end
 
-  # POST /books
   def create
-    @book = current_user.books.new(book_params)
-
-    if @book.save
-      render json: @book, status: :created, location: @book
+    product = Product.create(product_params)
+    # movie points to an object if create was successfully, else movie points to false
+    if product.save
+      render json: product, status: :created
     else
-      render json: @book.errors, status: :unprocessable_entity
+      render json: product.errors, status: :unprocessable_entity
     end
   end
 
-  # PATCH /books/1
   def update
-    if @book.update(book_params)
-      head :no_content
+    product = Product.find(params[:id])
+    if product.update_attributes(product_params)
+      render json: product, status: :updated
     else
-      render json: @book.errors, status: :unprocessable_entity
+      render json: product.errors, status: :unprocessable_entity
     end
   end
 
-  # DELETE /books/1
   def destroy
-    @book.destroy
-
-    head :no_content
+    Product.find(params[:id]).destroy
+    head :ok
   end
 
-  def set_book
-    @book = current_user.books.find(params[:id])
+private
+  def product_params
+    params.require(:product).permit(
+      :title,
+      :img_url,
+      :rating,
+      :category,
+      :description,
+      :price
+      )
   end
-
-  def book_params
-    params.require(:book).permit(:title, :isbn)
-  end
-
-  private :set_book, :book_params
 end
