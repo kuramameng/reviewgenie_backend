@@ -31,7 +31,7 @@ curl --request POST --header "Content-Type: application/json" -d '{
 }' http://localhost:3000/login
 
 ######## logout ##########
-curl --request DELETE --header "Authorization: Token token=a95a89ad35ad60ecbc8a8bfaf69bd4f4" http://localhost:3000/logout/2
+curl --request DELETE --header "Authorization: Token token=ca0495766383c44607a6692cd85e1219" http://localhost:3000/logout/1
 
 ######## list user ###########
 curl --header "Authorization: Token token=a92ba2c4a71369fdedf0d1078d9b3be8" http://localhost:3000/users
@@ -45,5 +45,31 @@ curl --header "Authorization: Token token=e4220e47e2b14e020393190dbab1dbfa" http
 ########### list review ########
 curl --header "Authorization: Token token=e4220e47e2b14e020393190dbab1dbfa" http://localhost:3000/reviews
 
+########## create profile #######'
+curl --request POST --header "Authorization: Token token=3023dc8ee4f9fe31b529dac619d06a65" --header "Content-Type: application/json" -d '{
+  "profile": {
+    "first_name": "nil",
+    "last_name": "nil",
+    "nickname": "nil",
+    "website": "nil",
+    "phone": "nil",
+    "gender": "nil",
+    "location": "nil",
+    "birthday": "nil",
+    "interest": "nil",
+    "profile_image_url": "nil",
+    "status": "nil"
+  }
+}'  http://localhost:3000/profiles
+
+
+
+# curl --request POST --header "Authorization: Token token=be249dc0231396806f24c953cafae03a" --header "Content-Type: application/json" -d '{
+#   "book": {
+#     "title":"The Hold",
+#     "isbn":"abc123def456"
+#   }
+# }'  http://localhost:3000/books
+
 ########### list profile #######
-curl --header "Authorization: Token token=5421ef54a8127f0232718aea6a9202b7" http://localhost:3000/profiles
+curl --header "Authorization: Token token=56bf6e1e7bc50847fd34bc84b4573701" http://localhost:3000/profiles
