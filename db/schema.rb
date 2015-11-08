@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20151106203658) do
     t.string   "title"
     t.string   "asin"
     t.string   "img_url"
+    t.string   "rating"
     t.string   "category"
     t.text     "description"
     t.decimal  "price",       precision: 8, scale: 2
@@ -28,14 +29,20 @@ ActiveRecord::Schema.define(version: 20151106203658) do
   end
 
   create_table "profiles", force: :cascade do |t|
-    t.string   "user_name"
     t.string   "first_name"
     t.string   "last_name"
+    t.string   "nickname"
+    t.string   "website"
+    t.string   "phone"
+    t.string   "gender"
     t.string   "location"
+    t.string   "birthday"
+    t.string   "interest"
+    t.string   "profile_image_url"
     t.string   "status"
     t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
   add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree
