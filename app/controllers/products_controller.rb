@@ -34,12 +34,20 @@ class ProductsController < ApplicationController
 private
   def product_params
     params.require(:product).permit(
-      :title,
-      :img_url,
-      :rating,
-      :category,
-      :description,
-      :price
+      :first_name,
+      :last_name,
+      :nickname,
+      :website,
+      :phone,
+
+      :gender,
+      :location,
+
+      :birthday,
+      :interest,
+
+      :profile_image_url,
+      :status
       )
   end
 end
