@@ -47,7 +47,9 @@ private
       :interest,
 
       :profile_image_url,
-      :status
+      :status,
+
+      :user_id
       )
   end
 end
