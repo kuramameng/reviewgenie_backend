@@ -72,7 +72,7 @@ MPOW has always impressed me in their build quality (especially at their prices)
 I'd also like to add that the rubber 'feet' on the bottom (the bottom is directly underneath the controls - so that the speakers are on their sides) are extremely nice. I can set it on just about any flat surface and it sits tight - No sliding, I can even sit it on the dash of my car and it's fine to drive with.", product_id: 1)
 
 ###### generate test user profile #######
- Profile.create!(first_name: "Jiangsha", last_name: "Meng", nickname: "Meng", website: "https://www.linkedin.com/in/jsmeng", phone: "800-888-8888", gender: "M", location: "Boston, MA 02446", birthday: "1987-03-24", interest: "Gaming", profile_image_url: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/000/1e1/09d/243510f.jpg", status: "Meng is my hero", user_id: 1)
+ Profile.create!(first_name: "Jiangsha", last_name: "Meng", nickname: "Meng", website: "https://www.linkedin.com/in/jsmeng", phone: "800-888-8888", email: "mengjs324@gmail.com", gender: "M", location: "Boston, MA 02446", birthday: "1987-03-24", interest: "Gaming", profile_image_url: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/000/1e1/09d/243510f.jpg", status: "Meng is my hero", user_id: 1)
 
 
 

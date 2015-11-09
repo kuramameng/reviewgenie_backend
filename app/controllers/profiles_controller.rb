@@ -39,6 +39,7 @@ private
       :nickname,
       :website,
       :phone,
+      :email,
 
       :gender,
       :location,

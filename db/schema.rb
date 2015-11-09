@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20151106203658) do
     t.string   "nickname"
     t.string   "website"
     t.string   "phone"
+    t.string   "email"
     t.string   "gender"
     t.string   "location"
     t.string   "birthday"

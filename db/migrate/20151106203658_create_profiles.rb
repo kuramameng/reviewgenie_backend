@@ -6,6 +6,7 @@ class CreateProfiles < ActiveRecord::Migration
       t.string :nickname
       t.string :website
       t.string :phone
+      t.string :email
 
       t.string :gender
       t.string :location
