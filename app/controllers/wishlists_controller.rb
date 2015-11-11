@@ -34,6 +34,8 @@ class WishlistsController < ApplicationController
 private
   def wishlist_params
     params.require(:wishlist).permit(
+      :user_id,
+      :product_id,
       :title,
       :comment
       )
