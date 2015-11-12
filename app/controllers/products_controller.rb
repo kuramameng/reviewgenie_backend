@@ -35,11 +35,11 @@ private
   def product_params
     params.require(:product).permit(
       :title,
+      :price,
       :img_url,
-      :rating,
-      :category,
-      :description,
-      :price
+      (:rating),
+      (:category),
+      (:description),
       )
   end
 end

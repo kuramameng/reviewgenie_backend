@@ -37,10 +37,10 @@ curl --request DELETE --header "Authorization: Token token=ca0495766383c44607a66
 curl --header "Authorization: Token token=a92ba2c4a71369fdedf0d1078d9b3be8" http://localhost:3000/users
 
 ######## list products #########
-curl --header "Authorization: Token token=e4220e47e2b14e020393190dbab1dbfa" http://localhost:3000/products
+curl --header "Authorization: Token token=5f7bbf153d1ff76d717ff5d02772f465" http://localhost:3000/products
 
 ######### list wishlist ########
-curl --header "Authorization: Token token=9c8a71e45662cf196ad0159cda5d5569" http://localhost:3000/wishlists
+curl --header "Authorization: Token token=7dafa5e56ddea2afd5a6947e9dc411b2" http://localhost:3000/wishlists
 
 ########### list review ########
 curl --header "Authorization: Token token=e4220e47e2b14e020393190dbab1dbfa" http://localhost:3000/reviews
@@ -85,4 +85,4 @@ curl --request POST --header "Authorization: Token token=2069b94f1b8ef2a7050325c
 
 ############ delete wishlist ###########
 
-curl --request DELETE --header "Authorization: Token token=b9cb88da21944646b99776138d7f5f8a" --header "Content-Type: application/json"  http://localhost:3000/wishlists/17
+curl --request DELETE --header "Authorization: Token token=fb2d5f08b6b8fc91ec514116345ce5fb" --header "Content-Type: application/json"  http://localhost:3000/wishlists/id

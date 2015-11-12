@@ -37,7 +37,7 @@ private
       :user_id,
       :product_id,
       :title,
-      :comment
+      (:comment)
       )
   end
 end

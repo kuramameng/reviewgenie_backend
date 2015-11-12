@@ -21,6 +21,9 @@ else
                password_confirmation: 'meng123')
 end
 
+ User.create!(email: "mengjs324@gmail.com", password: '111',
+               password_confirmation: '111')
+
 ###### generate test product data ######
 Product.create!(title: "Mpow Armor Portable Wireless Bluetooth Speakers with Additional 1000 mAh Emergency Power Bank Function and Splashproof Shockproof Dustproof for Outdoor/Shower (Orange/Black)", asin: "B00QF1DHP8", img_url: "http://ecx.images-amazon.com/images/I/51C4QCgNifL._SL160_.jpg", rating: "4.4", category: "Electronics", description: "Armor wireless bluetooth 4.0 speaker provides strong bass and loud sound with built-in 5W driver & bass radiator and A2DP/AVRCP support. You can enjoy HD clear music even in the noisy outdoor square.
 Extra long built-in rechargeable 1000 mAH battery allows you playing music up to 10 hours, almost all day. More importantly, Additional emergency power supply with max up to another 1000 mAH, can charge your cell phones when in urgent need in outdoor.
@@ -44,10 +47,10 @@ Compact Lightning Connector head works with nearly all cases
 Backed by an AmazonBasics 1-year Limited Warranty", price: 5.99)
 
 ####### generate test wishlist #######
-Wishlist.create!(user_id: 1, product_id: 1, title: "Meng's wishlist", comment: "I want that!")
-Wishlist.create!(user_id: 1, product_id: 2, title: "Meng's wishlist", comment: "Pretty nice!")
-Wishlist.create!(user_id: 1, product_id: 3, title: "Meng's wishlist", comment: "Saved!")
-Wishlist.create!(user_id: 1, product_id: 4, title: "Meng's wishlist", comment: "Get it soon!")
+Wishlist.create!(user_id: 1, product_id: 1, title: "wishlist1", comment: "I want that!")
+Wishlist.create!(user_id: 1, product_id: 2, title: "wishlist1", comment: "Pretty nice!")
+Wishlist.create!(user_id: 1, product_id: 3, title: "wishlist2", comment: "Saved!")
+Wishlist.create!(user_id: 2, product_id: 4, title: "wishlist3", comment: "Get it soon!")
 
 ####### generate test review dataset #######
 Review.create!(reviewer: "Dre", content: "I was provided a Mpow Armor Portable Bluetooth Speaker for testing and review and was asked only to give my honest review, so this is what I found.
@@ -74,6 +77,6 @@ I'd also like to add that the rubber 'feet' on the bottom (the bottom is directl
 ###### generate test user profile #######
  Profile.create!(first_name: "Jiangsha", last_name: "Meng", nickname: "Meng", website: "https://www.linkedin.com/in/jsmeng", phone: "800-888-8888", email: "mengjs324@gmail.com", gender: "M", location: "Boston, MA 02446", birthday: "1987-03-24", interest: "Gaming", profile_image_url: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/000/1e1/09d/243510f.jpg", status: "Meng is my hero", user_id: 1)
 
-
+ Profile.create!(first_name: "nil", last_name: "nil", nickname: "nil", website: "nil", phone: "nil", email: "mengjs324@gmail", gender: "F", location: "nil", birthday: "nil", interest: "nil", profile_image_url: "nil", status: "nil", user_id: 2)
 
 
