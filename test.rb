@@ -5,7 +5,7 @@ curl --include --request POST --header "Content-Type: application/json" -d '{
     "password": "169",
     "password_confirmation": "169"
   }
-}' http://localhost:3000/register
+}' https://intense-tundra-9809.herokuapp.com/register
 
 curl --include --request POST --header "Content-Type: application/json" -d '{
   "credentials": {
@@ -18,10 +18,10 @@ curl --include --request POST --header "Content-Type: application/json" -d '{
 ###### Login #############
 curl --request POST --header "Content-Type: application/json" -d '{
   "credentials": {
-    "email": "ivy@gmail.com",
-    "password": "169"
+    "email": "meng@js.com",
+    "password": "meng123"
   }
-}' http://localhost:3000/login
+}' https://intense-tundra-9809.herokuapp.com/login
 
 curl --request POST --header "Content-Type: application/json" -d '{
   "credentials": {
